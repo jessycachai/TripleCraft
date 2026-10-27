@@ -153,7 +153,14 @@
     <div class="team-grid">
 
       <!-- Amelia -->
-      <div class="team-card">
+      <div class="team-card" data-member="amelia"
+        data-name="Amelia Alfie Fatihah"
+        data-nim="19231068"
+        data-role="Web Developer & UI/UX"
+        data-email="19231068@bsi.ac.id"
+        data-wa="6285171720627"
+        data-photo="amelia2.jpeg"
+        data-about="Mahasiswi aktif Prodi Sistem Informasi di Universitas Bina Sarana Informatika. Tertarik pada pengembangan web dan desain antarmuka yang menarik.">
         <div class="team-avatar">
           <img src="amelia2.jpeg" alt="Foto Amelia" class="team-photo" />
         </div>
@@ -162,18 +169,26 @@
           <span class="team-nim">NIM: 19231068</span>
           <p class="team-role"><i class="fas fa-laptop-code"></i> Web Developer & UI/UX</p>
           <div class="team-contacts">
-            <a href="mailto:19231068@bsi.ac.id" class="team-contact-btn">
+            <a href="mailto:19231068@bsi.ac.id" class="team-contact-btn" onclick="event.stopPropagation()">
               <i class="fas fa-envelope"></i> Email
             </a>
-            <a href="https://wa.me/6285171720627" target="_blank" class="team-contact-btn wa">
+            <a href="https://wa.me/6285171720627" target="_blank" class="team-contact-btn wa" onclick="event.stopPropagation()">
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
           </div>
         </div>
+        <div class="card-click-hint"><i class="fas fa-eye"></i> Lihat Profil</div>
       </div>
 
       <!-- Fara -->
-      <div class="team-card">
+      <div class="team-card" data-member="fara"
+        data-name="Fara Dilla"
+        data-nim="19231936"
+        data-role="Web Developer & UI/UX"
+        data-email="19231936@bsi.ac.id"
+        data-wa="6281292397961"
+        data-photo=""
+        data-about="Mahasiswi aktif Prodi Sistem Informasi di Universitas Bina Sarana Informatika. Memiliki minat di bidang pengembangan web dan desain UI/UX.">
         <div class="team-avatar">
           <i class="fas fa-user-circle"></i>
         </div>
@@ -182,18 +197,26 @@
           <span class="team-nim">NIM: 19231936</span>
           <p class="team-role"><i class="fas fa-laptop-code"></i> Web Developer & UI/UX</p>
           <div class="team-contacts">
-            <a href="mailto:19231936@bsi.ac.id" class="team-contact-btn">
+            <a href="mailto:19231936@bsi.ac.id" class="team-contact-btn" onclick="event.stopPropagation()">
               <i class="fas fa-envelope"></i> Email
             </a>
-            <a href="https://wa.me/6281292397961" target="_blank" class="team-contact-btn wa">
+            <a href="https://wa.me/6281292397961" target="_blank" class="team-contact-btn wa" onclick="event.stopPropagation()">
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
           </div>
         </div>
+        <div class="card-click-hint"><i class="fas fa-eye"></i> Lihat Profil</div>
       </div>
 
       <!-- Jessyca -->
-      <div class="team-card">
+      <div class="team-card" data-member="jessyca"
+        data-name="Jessyca"
+        data-nim="19231098"
+        data-role="Web Developer & UI/UX"
+        data-email="19231098@bsi.ac.id"
+        data-wa="6285179635761"
+        data-photo="jessyca.jpeg"
+        data-about="Mahasiswi aktif Prodi Sistem Informasi di Universitas Bina Sarana Informatika. Passionate dalam membangun website yang fungsional dan berpusat pada pengguna.">
         <div class="team-avatar">
           <img src="jessyca.jpeg" alt="Foto Jessyca" class="team-photo" />
         </div>
@@ -202,14 +225,15 @@
           <span class="team-nim">NIM: 19231098</span>
           <p class="team-role"><i class="fas fa-laptop-code"></i> Web Developer & UI/UX</p>
           <div class="team-contacts">
-            <a href="mailto:19231098@bsi.ac.id" class="team-contact-btn">
+            <a href="mailto:19231098@bsi.ac.id" class="team-contact-btn" onclick="event.stopPropagation()">
               <i class="fas fa-envelope"></i> Email
             </a>
-            <a href="https://wa.me/6285179635761" target="_blank" class="team-contact-btn wa">
+            <a href="https://wa.me/6285179635761" target="_blank" class="team-contact-btn wa" onclick="event.stopPropagation()">
               <i class="fab fa-whatsapp"></i> WhatsApp
             </a>
           </div>
         </div>
+        <div class="card-click-hint"><i class="fas fa-eye"></i> Lihat Profil</div>
       </div>
 
     </div>
@@ -305,6 +329,23 @@
       </a>
     </div>
   </section>
+
+  <!-- ===== MODAL PROFILE ===== -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <div class="modal-avatar">
+        <img id="modalPhoto" src="" alt="" class="modal-photo" />
+        <div class="modal-avatar-icon" id="modalIcon"><i class="fas fa-user-circle"></i></div>
+      </div>
+      <h2 id="modalName"></h2>
+      <span class="modal-nim" id="modalNim"></span>
+      <p class="modal-role" id="modalRole"></p>
+      <div class="modal-divider"></div>
+      <div class="modal-details" id="modalDetails"></div>
+      <div class="modal-actions" id="modalActions"></div>
+    </div>
+  </div>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
