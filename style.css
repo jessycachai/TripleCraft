@@ -645,6 +645,8 @@ section {
 .contact-card span {
   font-size: 0.85rem;
   color: var(--text-muted);
+  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 /* ===== FOOTER ===== */
