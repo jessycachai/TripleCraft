@@ -605,9 +605,9 @@ section {
 
 .contact-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -615,10 +615,11 @@ section {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   text-align: center;
   transition: all 0.3s;
   display: block;
+  overflow: hidden;
 }
 
 .contact-card:hover {
@@ -647,6 +648,9 @@ section {
   color: var(--text-muted);
   word-break: break-all;
   overflow-wrap: break-word;
+  display: block;
+  max-width: 100%;
+  padding: 0 0.5rem;
 }
 
 /* ===== FOOTER ===== */
